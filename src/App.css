@@ -1,0 +1,388 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.hero {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  padding: 0 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.wlcmMsg{
+    font-family: 'Bad Script';
+font-family: 'Bree Serif', serif;
+font-family: 'Kalam';
+font-family: 'Rubik Bubbles', system-ui;
+font-family: 'Rubik Doodle Shadow', system-ui;
+font-family: 'Tangerine';
+}
+
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000; /* Ensure the navbar stays on top */
+}
+
+.logo {
+  max-height: 50px; /* Adjust as per your design requirements */
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: #fff; 
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: #aaa; 
+}
+.nav-item:hover{
+  background-color: rgba(52, 220, 18, 0.833);
+  color: white;
+  border-radius: 5px;
+  
+}
+nav a.active{
+  background-color: rgba(52, 220, 18, 0.833);
+  color: rgb(211, 208, 208);
+  border-radius: 5px;
+  font-size: 17px;
+}
+.content {
+  text-align: center;
+  margin-top: 50px; /* Added spacing for better visibility */
+}
+
+.content h1 {
+  font-size: 4.5rem; /* Adjusted font size for responsiveness */
+  color: white;
+  font-weight: 600;
+  transition: 0.5s;
+}
+
+.content h1:hover {
+  -webkit-text-stroke: 2px white;
+  color: transparent;
+  text-shadow: 2px 2px 4px rgba(52, 220, 18, 0.833);
+}
+
+.back-video {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  opacity: 0.95;
+}
+
+@media (max-width: 768px) { /* Adjusted for mobile responsiveness */
+  nav {
+    padding: 20px 5%; /* Reduced padding for smaller screens */
+  }
+
+  nav .logo {
+    width: 60px; /* Further reduced logo size for smaller screens */
+  }
+
+  nav ul {
+    flex-direction: column; /* Stacked list items for smaller screens */
+    gap: 15px; /* Reduced gap between stacked items */
+  }
+
+  .content h1 {
+    font-size: 1.5rem; /* Adjusted font size for smaller screens */
+  }
+}
+
+@media (min-aspect-ratio: 16/9) {
+  .back-video {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-aspect-ratio: 16/9) {
+  .back-video {
+    width: auto;
+    height: 100%;
+  }
+}
+
+
+/* nav+video end */
+
+.card-image {
+    height: 200px;  /* Set a fixed height for the images */
+    object-fit: cover; /* This ensures the image covers the set dimensions */
+    width: 100%; /* Adjust width if needed */
+  }
+
+  .services-heading {
+    text-shadow: 2px 2px 4px rgba(52, 220, 18, 0.833); /* Horizontal offset, Vertical offset, Blur radius, Color */
+    color: white; /* Ensuring the text color is white for better contrast */
+  }
+  
+ /* CardStyles.css */
+
+.card-three{
+    border-radius: 15px; /* Rounded corners for the card */
+    overflow: hidden; /* Ensures that the content inside the card does not overflow */
+    box-shadow: 0 4px 8px rgba(187, 185, 185, 0.744); /* Shadow for the card */
+    transition: transform 0.3s ease-in-out; /* Smooth transition effect for hover */
+  }
+  
+  .card-three:hover {
+    transform: scale(1.1); /* Lifts the card slightly on hover for a subtle interaction effect */
+  }
+  
+
+  .card-title {
+    font-size: 1.5rem; /* Adjusts the font size of the card title */
+  }
+  
+  .card-text {
+    font-size: 1rem; /* Adjusts the font size of the card text */
+  }
+
+
+  /* restaurant */
+  .anchorMapPhone{
+    text-decoration: none;
+    color: white;
+  }
+
+  .card-image-restaurant {
+    height: 300px;  /* Set a fixed height for the images */
+    object-fit: cover; /* This ensures the image covers the set dimensions */
+    width: 100%; /* Adjust width if needed */
+  }
+
+  .card-rest {
+    border-radius: 15px; /* Rounded corners for the card */
+    overflow: hidden; /* Ensures that the content inside the card does not overflow */
+    box-shadow: 0 4px 8px rgba(187, 185, 185, 0.744); /* Shadow for the card */
+    transition: transform 0.3s ease-in-out; /* Smooth transition effect for hover */
+  }
+  
+  .card-three:hover {
+    transform: scale(1.1); /* Lifts the card slightly on hover for a subtle interaction effect */
+  }
+  .stars{
+    color: goldenrod;
+  }   
+  .srchbtn{
+    background-color: rgba(52, 220, 18, 0.833);
+  }
+  .srchbtn:hover{
+    background-color: green;
+  }
+  /* retuatent over */
+
+  /* dining start */
+.welcomcol{
+  transition: all ease-in-out 1s;
+}
+
+.wlcmMsgdining {
+  font-family: 'Bad Script';
+  font-family: 'Bree Serif', serif;
+  font-family: 'Kalam';
+  font-family: 'Rubik Bubbles', system-ui;
+  font-family: 'Rubik Doodle Shadow', system-ui;
+  font-family: 'Tangerine';
+  text-shadow: 1px 1px 2px rgba(215, 19, 68, 0.699);
+  font-size: 4rem;
+}
+.welcomcol:hover{
+  transform: rotate(360deg);
+}
+
+/* dining */
+.card-image-dining{
+  height: 300px;  /* Set a fixed height for the images */
+  object-fit: cover; /* This ensures the image covers the set dimensions */
+  width: 100%; /* Adjust width if needed */
+}
+.col-dining{
+  width: 18rem;
+  box-shadow: 0 4px 8px rgba(187, 185, 185, 0.744); 
+}
+.greenStar{
+  font-size: small;
+}
+.starfontnum{
+  font-size: small;
+}
+.greenStartbg{
+  background-color: rgb(8, 143, 8);
+  height: 25px;
+  width: 50px;
+  padding: 4px;
+  gap: 2px;
+}
+/* footer */
+
+.footer {
+    background-color: #1e1e1e;
+    color: #fff;
+    padding: 20px 0;
+  }
+  .anchorMapPhone:hover{
+    color: rgba(52, 220, 18, 0.833);
+  }
+  
+  .footer h5 {
+    margin-bottom: 20px;
+  }
+  
+  .social-links a {
+    margin-right: 10px;
+    color: #fff;
+  }
+  .social-links a:hover {
+    color:rgba(52, 220, 18, 0.833);
+  }
+  
+  .footer-bottom {
+    background-color: #000000;
+    color: #fff;
+    padding: 10px 0;
+  }
+  
+
+
+
+
+
+
+
+
+
+
+/* Styles for restaurant-container */
+.restaurant-container {
+  padding: 20px;
+}
+
+/* Styles for carousel */
+.carousel-item img {
+  border-radius: 8px; /* Gives a rounded corner effect */
+  max-height: 80vh; /* Set the maximum height to 60% of the viewport height */
+  width: 60vw; /* Allows the width to adjust based on the aspect ratio of the image */
+  display: block; /* Ensures the image is displayed as a block element */
+  margin: 0 auto; /* Centers the image horizontally */
+   /* Ensures the image fits inside the carousel item without stretching */
+}
+
+/* Styles for restaurant-name */
+.restaurant-name {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 2rem;
+  color: #333; /* Dark color for better readability */
+}
+
+/* Styles for menu-section */
+.menu-section {
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.menu-title {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 20px;
+  margin-left: 25px;
+  text-decoration: underline;
+  color: white; /* Dark color for better readability */
+}
+
+.menu-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.menu-item {
+  display: flex;
+ 
+  margin-bottom: 15px;
+  border: #c9c4c4 0.5px solid;
+  padding: 15px;
+  background-color: #1e1e1e;
+  border-radius: 5px;
+}
+
+.menu-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%; /* Makes the image circular */
+  margin-right: 15px;
+}
+
+.menu-text {
+  font-size: 1.2rem;
+  color: #fff; 
+  font-weight: 400;
+}
+
+
+.road {
+  display: flex;
+  background-color: #7d7a7a;
+  margin-top: -80px;
+  height: 100px;
+}
+
+.roadcol {
+  padding: 19px;
+}
+
+.roadwhite {
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.extrawhite {
+  animation: moveright 3s linear forwards;
+}
+
+.delivery2 {
+  transform: translateY(-100px) translateX(0); /* Combine both translations */
+  height: 90px;
+  position: relative;
+  animation: moveright 4s linear forwards;
+  animation-iteration-count: 1;
+}
+
+@keyframes moveright {
+  0% {
+    transform: translateY(-100px) translateX(-100px); /* Combine both translations */
+  }
+  99% {
+    transform: translateY(-100px) translateX(1000px); /* Combine both translations */
+  }
+  100% {
+    display: none;
+  }
+}
+
+.card-image-delivery{
+
+  height: 300px;  
+  object-fit: cover; 
+  width: 100%;
+}
+.add{
+  background-color: rgba(52, 220, 18, 0.833);
+  color: white;
+}
+.deliverycard{
+  box-shadow: 0 4px 8px rgba(187, 185, 185, 0.744);
+}
+.price{
+  color: #aaa;
+}
